@@ -17,7 +17,6 @@ const CardBodyLeft = () => {
           <Image
             alt="nextui logo"
             src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-            // as={NextImage}
             width={200}
             height={200}
             className="rounded-full"
