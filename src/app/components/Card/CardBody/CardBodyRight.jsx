@@ -8,16 +8,41 @@ import {
   Link,
   Image,
 } from "@nextui-org/react";
+import { useTranslations } from "next-intl";
 
 const CardBodyRight = () => {
+  const t = useTranslations("CardBodyRight");
+  const tx = useTranslations("CardBodyRight.Card");
+
   return (
     <div className="w-full">
       <div className="border-b-1">
-        <p className="text-2xl text-center">Thông tin liên hệ</p>
+        <p className="text-2xl text-center">{t("title")}</p>
         <ul className="list">
-          <li>lorem10</li>
-          <li>lorem10</li>
-          <li>lorem10</li>
+          <li>
+            Phone :{" "}
+            <a href="#" className="text-[#50d71e]">
+              0976897134
+            </a>
+          </li>
+          <li>
+            Email :{" "}
+            <a href="#" className="text-[#50d71e]">
+              0976897134
+            </a>
+          </li>
+          <li>
+            Facebook :{" "}
+            <a href="#" className="text-[#50d71e]">
+              0976897134
+            </a>
+          </li>
+          <li>
+            Youtube :{" "}
+            <a href="#" className="text-[#50d71e]">
+              0976897134
+            </a>
+          </li>
         </ul>
       </div>
       <Card className="p-5 mt-5">
@@ -30,13 +55,15 @@ const CardBodyRight = () => {
             width={40}
           />
           <div className="flex flex-col">
-            <p className="text-md">NextUI</p>
+            <p className="text-md">{tx("title")}</p>
             <p className="text-small text-default-500">nextui.org</p>
           </div>
         </CardHeader>
         <Divider />
         <CardBody>
-          <p>Make beautiful websites regardless of your design experience.</p>
+          <p>{tx("a")}</p>
+          <p>{tx("b")}</p>
+          <p>{tx("c")}</p>
         </CardBody>
         <Divider />
         <CardFooter>

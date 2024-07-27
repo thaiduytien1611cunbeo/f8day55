@@ -1,0 +1,11 @@
+{
+	"CardBodyRight": {
+	  "title": "Social contact",
+	  "Card": {
+		"title":"Self project",
+		"a":"Project Code snippet",
+		"b":"A small project completed within a day",
+		"c":"A simple website that allows you to create and share code snippets. Using HTML, CSS, JS and custom elements."
+	  }
+	}
+  }
